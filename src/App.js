@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import styled, { createGlobalStyle } from 'styled-components'
+import Europe from './Components/Europe';
+const GlobalStyle = createGlobalStyle`
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+body{
+  font-size: 62.5%;
+  background-color: #192a56;
+  font-family: 'Noto Sans', sans-serif;}
+`
+const MainContainer = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+`
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MainContainer>
+        <Europe />
+      </MainContainer>
+      <GlobalStyle />
+    </>
   );
 }
 
