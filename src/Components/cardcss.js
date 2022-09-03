@@ -32,5 +32,15 @@ margin-top:2rem ;
 margin-bottom: 2rem;
 `
 export const Container = styled.div`
+width: 100%;
     display: flex;
+    justify-content: center;
+    flex-direction:column;
+text-align: center;
+`
+export const Tempeture = styled.div`
+font-size: 2rem;
+color: #fff;
+display: flex;
+
 `

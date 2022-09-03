@@ -1,18 +1,22 @@
 import React from 'react'
-import { Card, CardContainer, Container, Hr, Title } from '../cardcss'
+import { Card, CardContainer, Container, Hr, Tempeture, Title } from '../cardcss'
 
-const Europe=() => {
+const Europe = () => {
     return (
         <>
             Daily EUROPE
             <Hr />
             <CardContainer>
-
                 <Card>
                     <Title>Rome</Title>
                     <img src='http://openweathermap.org/img/wn/10d@2x.png' />
-                    <Container>
+                    <Tempeture>
+                        28 <span>&#8451;</span>
+                    </Tempeture>
 
+                    <Container>
+                    <img src='/animated/sunrise.svg' />
+                    
                     </Container>
                 </Card>
                 <Card>
