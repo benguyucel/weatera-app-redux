@@ -10,7 +10,7 @@ function TurkeyCityList({ daily, name, timezone }) {
             <CardContainer>
                 {daily && (
                     daily.map((item, idx) => {
-                        return idx < 5 && (
+                        return idx > 0 && idx < 6 ? (
                             <Card key={nanoid()}>
                                 <Title>{moment.unix(item.dt).tz(`${timezone}`).format("dddd")}</Title>
                                 <img src={`/animated/${item.weather[0].icon}.svg`} alt={name} />
@@ -35,7 +35,7 @@ function TurkeyCityList({ daily, name, timezone }) {
                                     </Item>
                                 </Container>
                             </Card>
-                        )
+                        ) : null
                     }
                     )
                 )
