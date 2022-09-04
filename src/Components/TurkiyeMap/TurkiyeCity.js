@@ -20,7 +20,7 @@ function TurkiyeCity() {
                 {city.current && (
                     <Card>
                         <Title>{city.name}</Title>
-                        <Title>TODAY</Title>
+                        <Title>CURRENT</Title>
                         <img src={`/animated/${city.current.weather[0].icon}.svg`} alt={city.name} />
                         <Tempeture>
                             {city.current.temp} <span>&#8451;</span>
