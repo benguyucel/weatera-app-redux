@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import Europe from './Components/Europe';
+import EuropeCityList from './Components/Europe/EuropeCityList';
+import TurkiyeMap from './Components/TurkiyeMap';
+import TurkiyeCity from './Components/TurkiyeMap/TurkiyeCity';
 const GlobalStyle = createGlobalStyle`
 *{
   padding: 0;
@@ -17,10 +19,13 @@ const MainContainer = styled.div`
   margin: 0 auto;
 `
 const App = () => {
+
   return (
     <>
       <MainContainer>
-        <Europe />
+        <EuropeCityList />
+        <TurkiyeCity />
+        <TurkiyeMap />
       </MainContainer>
       <GlobalStyle />
     </>

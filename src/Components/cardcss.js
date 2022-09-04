@@ -2,9 +2,10 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
 width: 100%;
 display: flex;
-justify-content: space-between;
 align-items: center;
+justify-content: center;
 flex-wrap: wrap;
+gap:.75rem
 `
 export const Card = styled.div`
 padding: 1rem;
@@ -16,6 +17,7 @@ display: flex;
 align-items:center;
 justify-content: center;
 flex-direction: column;
+margin-bottom:1rem;
 `
 export const Title = styled.h2`
 text-align: center;
@@ -34,8 +36,7 @@ margin-bottom: 2rem;
 export const Container = styled.div`
 width: 100%;
     display: flex;
-    justify-content: center;
-    flex-direction:column;
+    justify-content: space-between;
 text-align: center;
 `
 export const Tempeture = styled.div`
@@ -43,4 +44,15 @@ font-size: 2rem;
 color: #fff;
 display: flex;
 
+`
+export const Item = styled.div`
+margin-top: .8rem;
+color: #fff;
+font-size: .72rem;
+text-transform: uppercase;
+`
+export const HeaderText = styled.h2`
+text-align: center;
+color: #fff;
+padding-top: 1rem;
 `
